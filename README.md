@@ -57,3 +57,40 @@ Note that the /public folder is mapped to the root ('/') route, and the drinks c
 #### package.json
 A file containing all of the npm modules used by the application. You should not edit this file directly. Instead, use npm with the *--save* option to add
 your packages to the file.
+
+## Installing Node.js on Raspberry Pi 3
+
+If you use NOOBS to install Raspbian on your Raspberry Pi 3, it will not install node.js by default. To do that you will to open a terminal from the
+"pi" menu and run the following commands:
+
+First, update the package list to get the latest versions of your installed packages:
+
+`$ sudo apt update`
+
+Then update everything to the latest version:
+
+`$ sudo apt full-upgrade`
+
+Now fetch the NodeSource package for debian that we'll use to install ndoe.js
+
+`$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+
+Finally install node.js
+
+`$ sudo apt install nodejs`
+
+Now that you have node installed, you can clone this repository and install it on your machine:
+
+`$ git clone https://github.com/cartasite/cartabar.git`
+
+This creates a `~/cartabar` folder in your home directory. Now change to that directory and run the node package manager to install the modules listed in
+the project.json file:
+
+`$ cd ~/cartabar`
+`$ npm install`
+
+Now run the application:
+
+`$ node index.js`
+
+And open a browser to `http://localhost:3000/ and see the results!

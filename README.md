@@ -13,18 +13,18 @@ data from the models, assembling the data with one or more views and returning t
 A simple controller with three endpoints.
 This controller serves 3 endpoints:
 
-/ - returns all drinks from the model
+- `/` - returns all drinks from the model
 
-/:drinkId - returns one drink from the model based on its drink id
+- `/:drinkId` - returns one drink from the model based on its drink id
 
-/names - returns the names of all the drinks in an array
+- `/names` - returns the names of all the drinks in an array
 
 Because this controller is mapped to the /drinks route (see index.js above), the actual endpoints for this controller
 are:
 
-/drinks/
-/drinks/:drinkKey
-/drinks/names
+- `/drinks/`
+- `/drinks/:drinkKey`
+- `/drinks/names`
 
 #### models
 A folder for holding either data or code designed to access data. An application uses models to hide the implementaion details
@@ -65,32 +65,32 @@ If you use NOOBS to install Raspbian on your Raspberry Pi 3, it will not install
 
 First, update the package list to get the latest versions of your installed packages:
 
-`$ sudo apt update`
+- `$ sudo apt update`
 
 Then update everything to the latest version:
 
-`$ sudo apt full-upgrade`
+- `$ sudo apt full-upgrade`
 
 Now fetch the NodeSource package for debian that we'll use to install ndoe.js
 
-`$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+- `$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
 
 Finally install node.js
 
-`$ sudo apt install nodejs`
+- `$ sudo apt install nodejs`
 
 Now that you have node installed, you can clone this repository and install it on your machine:
 
-`$ git clone https://github.com/cartasite/cartabar.git`
+- `$ git clone https://github.com/cartasite/cartabar.git`
 
 This creates a `~/cartabar` folder in your home directory. Now change to that directory and run the node package manager to install the modules listed in
 the project.json file:
 
-`$ cd ~/cartabar`
-`$ npm install`
+- `$ cd ~/cartabar`
+- `$ npm install`
 
 Now run the application:
 
-`$ node index.js`
+- `$ node index.js`
 
 And open a browser to `http://localhost:3000/` and see the results!

@@ -94,3 +94,5 @@ Now run the application:
 - `$ node index.js`
 
 And open a browser to `http://localhost:3000/` and see the results!
+
+https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview

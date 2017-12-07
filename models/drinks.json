@@ -1,11 +1,38 @@
-{
-  "rumcoke": {
-    "name": "Rum and Coke"
+[
+  {
+    "name": "Jack and Coke",
+    "ingredients": "Jack Daniels Whiskey and Coke",
+    "image": "/media/jack-coke.png",
+    "id": "jackCoke"
   },
-  "margarita": {
-    "name": "Margarita"
+  {
+    "name": "Margarita",
+    "ingredients": "Tequila, water, simple sugar and lime",
+    "image": "/media/margarita.png",
+    "id": "margarita"
   },
-  "longtea": {
-    "name": "Long Island Iced Tea"
+  {
+    "name": "Bay Breeze",
+    "ingredients": "Vodka with pineapple and cranberry juice",
+    "image": "/media/baybreeze.png",
+    "id": "bayBreeze"
+  },
+  {
+    "name": "Screwdriver",
+    "ingredients": "Vodka and orange juice",
+    "image": "/media/screwdriver.png",
+    "id": "screwdriver"
+  },
+  {
+    "name": "Vodka Cranberry",
+    "ingredients": "Vodka and Cranberry Juice",
+    "image": "/media/vodka-cranberry.png",
+    "id": "vodkaCran"
+  },
+  {
+    "name": "Tequila Sunrise",
+    "ingredients": "Tequila and orange juice with a splash of grenadine",
+    "image": "/media/sunrise.png",
+    "id": "teqSunrise"
   }
-}
+]

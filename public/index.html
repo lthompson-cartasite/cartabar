@@ -1,10 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>CartaBar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ "
+        crossorigin="anonymous "></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <div class="header1">
+        <p>Choose Your Drink!</p>
+    </div>
+    <div class="container col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+            <div class="drink col-sm" id="jackCoke" data-toggle="modal" data-target="#myModal">
+                <img src="media/jack-coke.png" class="img-responsive img-thumbnail" style="min-height:160px;height:160px;margin-top:35px;margin-left:50px;"
+                    alt="Responsive image">
+            </div>
+            <div class="drink col-sm" id="vodkaCran" data-toggle="modal" data-target="#myModal">
+                <img src="media/vodka-cranberry.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px;" alt="Responsive image">
+            </div>
+            <div class="drink col-sm" id="teqSunrise" data-toggle="modal" data-target="#myModal">
+                <img src="media/sunrise.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px;margin-right:50px;"
+                    alt="Responsive image">
+            </div>
+        </div>
+    </div>
+    <div class="container col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+            <div class="shelf" id="shelfOne">
+                <div class="oneShelf col-sm-3 col-md-3">
+                    <p>Jack and Coke</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="twoShelf">
+                    <p>Vodka Cranberry</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                    <p align="right">Tequila Sunrise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container col-sm-12 col-md-12 col-lg-12 ">
+        <div class="row ">
+            <div class="drink col-sm" id="bayBreeze" data-toggle="modal" data-target="#myModal">
+                <img src="media/baybreeze.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px;margin-left:50px;
+                    " alt="Responsive image ">
+            </div>
+            <div class="drink col-sm" id="screwdriver" data-toggle="modal" data-target="#myModal">
+                <img src="media/screwdriver.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px;
+                    " alt="Responsive image ">
+            </div>
+            <div class="drink col-sm" id="margarta" data-toggle="modal" data-target="#myModal">
+                <img src="media/margarita.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px;margin-right:50px;
+                    " alt="Responsive image ">
+            </div>
+        </div>
+    </div>
+    <div class="container col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+            <div class="shelf" id="shelfTwo">
+                <div class="oneShelf col-sm-3 col-md-3">
+                    <p>Bay Breeze</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="twoShelf">
+                    <p>Screwdriver</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                    <p align="right">Margarita</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="/ingredients.html" class="close1 btn-default btn-lg disabled" style="font-size:40px;">Ingredients
+        </a>
+        <a href="/credits.html" class="close1 btn-default btn-lg disabled" style="font-size:40px; margin-right: 58%;">Credits
+        </a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+                <div class="footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="goBackBtn">Go Back</button>
+                    <button type="button" class="btn btn-default" id="makeBtn">Make</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script>
+
+
+
+    $(document).ready(function () {
+
+        $("div .drink").on("click", function (e) {
+            e.preventDefault();
+            var drinkID = $(this).attr("id");
+            $.getJSON("drinks", function (data) {
+                var items = [];
+                function drinkFilter(drink) {
+                    if (drink.id === drinkID) {
+                        return drink;
+                    }
+                }
+                var html = data.filter(drinkFilter)
+                    .map(function (drink) {
+                        var li = "<ul style = 'font-size: 38px; margin-bottom: 30px;'>" + drink.name + "</ul>\
+                        <ul style = 'font-size: 24px; margin-bottom: 40px;'>" + drink.ingredients + '</ul>\
+                        <img src ="' + drink.image + '"/>'
+                        return li
+                    });
+                console.log("html message", html.join(""));
+
+                // $("<ul/>", {
+                //     // "class": "my-new-list",
+                //     html: html.join("")
+                // }).appendTo(".modal-body");
+                console.log("json data append");
+                $(".modal-body").html(html.join(""))
+            });
+        })
+    })
+
+</script>
+
 </html>

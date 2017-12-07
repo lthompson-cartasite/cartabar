@@ -1,0 +1,108 @@
+.header {
+  padding-left: 25%;
+  margin: 30px;
+  font-size: 70px;
+  display: inline-flex;
+}
+.header1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 70px;
+}
+.close {
+  margin-left: 31%;
+  margin-top: 4%;
+}
+.close1 {
+  margin-bottom: 30px;
+  float: right;
+  margin-right: 100px;
+  font-size: 70px;
+  color: black;
+}
+.drink {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+.ingredients {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+body {
+  background-image: url(./media/brickwall_@2X.png);
+}
+.shelf {
+  height: 55px;
+  width: 100%;
+  border: solid;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 7px;
+  border-color: black;
+  background-color: #877059;
+  margin-bottom: 50px;
+}
+.oneShelf {
+  display: inline-flex;
+  color: white;
+  font-size: 30px;
+  font-weight: 6px;
+  margin: 0px 20px 0px 20px;
+}
+
+.oneShelf1 {
+  display: inline-flex;
+  color: white;
+  font-size: 26px;
+  font-weight: 6px;
+}
+
+#twoShelf {
+  margin-left: 140px;
+}
+#threeShelf {
+  margin-left: 70px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.contributers2 {
+  margin-bottom: 60px;
+}
+.modal-content {
+  text-align: center;
+  height: 570px;
+  width: 800px;
+  background-color: #84f990 !important;
+  border-radius: 1rem !important;
+}
+.modal {
+  margin-right: 20%;
+}
+
+.img-thumbnail {
+  background-color: transparent !important;
+}
+img {
+  height: 300px;
+}
+
+#goBackBtn {
+  font-size: 30px;
+  margin-right: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+#makeBtn {
+  font-size: 30px;
+  margin-left: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.modal-content2 {
+  text-align: center;
+  height: 570px;
+  width: 800px;
+  background-color: #f0c742 !important;
+  border-radius: 1rem !important;
+}

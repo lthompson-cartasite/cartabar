@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Coke",
+    "ingredients": "500 ml pour",
+    "image": "/media/coke.png",
+    "id": "coke"
+  },
+  {
+    "name": "Margarita Mix",
+    "ingredients": "500 ml pour",
+    "image": "/media/margarita-mix.png",
+    "id": "margaritaMix"
+  },
+  {
+    "name": "Pineapple Juice",
+    "ingredients": "500 ml pour",
+    "image": "/media/pinepple-juice.png",
+    "id": "pineappleJuice"
+  },
+  {
+    "name": "Orange Juice",
+    "ingredients": "500 ml pour",
+    "image": "/media/orange-juice.png",
+    "id": "orangeJuice"
+  },
+  {
+    "name": "Cranberry Juice",
+    "ingredients": "500 ml pour",
+    "image": "/media/cranberry-juice.png",
+    "id": "cranJuice"
+  },
+  {
+    "name": "Vodka",
+    "ingredients": "200 ml pour",
+    "image": "/media/vodka.png",
+    "id": "vodka"
+  },
+  {
+    "name": "Jack Daniels Whiskey",
+    "ingredients": "200 ml pour",
+    "image": "/media/whiskey.png",
+    "id": "whiskey"
+  },
+  {
+    "name": "Tequila",
+    "ingredients": "200 ml pour",
+    "image": "/media/tequila.png",
+    "id": "tequila"
+  }
+]

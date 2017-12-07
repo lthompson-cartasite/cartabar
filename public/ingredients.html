@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CartaBar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ "
+        crossorigin="anonymous "></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="header1">
+        <p style="margin-bottom: 50px;">Select Ingredient!</p>
+    </div>
+    <div class="container col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+            <div class="ingredients col-sm" id="pineappleJuice" data-toggle="modal" data-target="#myModal2">
+                <img src="media/pinepple-juice.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px; margin-left: 100px;"
+                    alt="Responsive image">
+            </div>
+            <div class="ingredients col-sm" id="orangeJuice" data-toggle="modal" data-target="#myModal2">
+                <img src="media/orange-juice.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px; margin-left: 30px;"
+                    alt="Responsive image">
+            </div>
+            <div class="ingredients col-sm" id="margariaMix" data-toggle="modal" data-target="#myModal2">
+                <img src="media/margarita-mix.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px; margin-right: 30px;"
+                    alt="Responsive image">
+            </div>
+            <div class="ingredients col-sm" id="cranJuice" data-toggle="modal" data-target="#myModal2">
+                <img src="media/cranberry-juice.png" class="img-responsive img-thumbnail" style="min-height:200px;height:200px; margin-right:100px;"
+                    alt="Responsive image">
+            </div>
+        </div>
+    </div>
+    <div class="container col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+            <div class="shelf" id="shelfOne1">
+                <div class="oneShelf1 col-sm-3 col-md-3" id="pineShelf" style="margin-left: 1%;">
+                    <p>Pineapple Juice</p>
+                </div>
+                <div class="oneShelf1 col-sm-2 col-md-2" style="margin-left: 2%;">
+                    <p>Orange Juice</p>
+                </div>
+                <div class="oneShelf1 col-sm-2 col-md-2" style="margin-left: 10%;">
+                    <p align="right">Margarita Mix</p>
+                </div>
+                <div class="oneShelf1 col-sm-3 col-md-3" id="cranShelf" style="float: right;">
+                    <p style="text-align: right;">Cranberry Juice</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container col-sm-12 col-md-12 col-lg-12 ">
+        <div class="row ">
+            <div class="ingredients col-sm" id="coke" data-toggle="modal" data-target="#myModal2">
+                <img src="media/coke.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px; margin-left: 100px;
+                    " alt="Responsive image ">
+            </div>
+            <div class="ingredients col-sm" id="vodka" data-toggle="modal" data-target="#myModal2">
+                <img src="media/vodka.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px; margin-left: 30px;
+                    " alt="Responsive image ">
+            </div>
+            <div class="ingredients col-sm" id="tequila" data-toggle="modal" data-target="#myModal2">
+                <img src="media/tequila.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px; margin-right: 30px;
+                    " alt="Responsive image ">
+            </div>
+            <div class="ingredients col-sm" id="whiskey" data-toggle="modal" data-target="#myModal2">
+                <img src="media/whiskey.png " class="img-responsive img-thumbnail " style="min-height:200px;height:200px; margin-right: 100px;
+                    " alt="Responsive image ">
+            </div>
+        </div>
+    </div>
+    <div class="container col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+            <div class="shelf" id="shelfTwo2">
+                <div class="oneShelf1 col-sm-2 col-md-2" style="margin-left:5%;">
+                    <p>Coke</p>
+                </div>
+                <div class="oneShelf1 col-sm-2 col-md-2" style="margin-left:10%;">
+                    <p>Vodka</p>
+                </div>
+                <div class="oneShelf1 col-sm-2 col-md-2" style="margin-left:10%;">
+                    <p align="right">Tequila</p>
+                </div>
+                <div class="oneShelf1 col-sm-2 col-md-2" style="float:right; text-align: center;">
+                    <p>Whiskey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="/index.html" class="close1 btn-default btn-lg disabled" style="font-size:40px;">Back to Drinks
+        </a>
+        <a href="/credits.html" class="close1 btn-default btn-lg disabled" style="font-size:40px; margin-right: 58%;">Credits
+        </a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content2">
+                <div class="modal-body2">
+                </div>
+                <div class="footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="goBackBtn">Go Back</button>
+                    <button type="button" class="btn btn-default" id="makeBtn">Pour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+
+
+    $(document).ready(function () {
+
+        $("div .ingredients").on("click", function (e) {
+            e.preventDefault();
+            var ingredientID = $(this).attr("id");
+            $.getJSON("ingredients", function (data) {
+                var items = [];
+                // $.each(data, function (key, val) {
+
+                //     items.push("<li id='" + key + "'>" + val + "</li>");
+                // });
+                function ingredientFilter(ingredient) {
+                    if (ingredient.id === ingredientID) {
+                        return ingredient;
+                    }
+                }
+                var html = data.filter(ingredientFilter)
+                    .map(function (ingredient) {
+                        var li = "<ul style = 'font-size: 38px; margin-bottom: 30px;'>" + ingredient.name + "</ul>\
+                        <ul style = 'font-size: 24px; margin-bottom: 40px;'>" + ingredient.ingredients + '</ul>\
+                        <img src ="' + ingredient.image + '"/>'
+                        return li
+                    });
+                console.log("html message", html.join(""));
+
+                // $("<ul/>", {
+                //     // "class": "my-new-list",
+                //     html: html.join("")
+                // }).appendTo(".modal-body");
+                console.log("json data append");
+                $(".modal-body2").html(html.join(""))
+            });
+        })
+    })
+
+</script>
+
+</html>

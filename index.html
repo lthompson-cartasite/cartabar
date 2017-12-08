@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CartaBar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <script src="/scripts/jquery-3.2.1.min.js"></script>
+    <script src="/scripts/drinks.js"></script>
+    <script src="/scripts/popper.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+</head>
+
+<body>
+
+<div class="header1">
+    <h3 style="position: absolute; top: 20px;
+            left:20px" class="logo">cartaBAR</h3>
+
+    <a href="/credits">
+        <button type="button" class="btn btn-info" style="position: absolute; top: 20px;
+            right:20px" >Credits
+        </button>
+    </a>
+</div>
+
+
+<div class="header1">
+    <h1>Cocktails</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class=" col-sm-4 col-md-4 drink" id="jackCoke" onclick="pourJackAndCoke();">
+            <img src="media/jack-coke.png" class="img-responsive cocktail-img"
+                 alt="Responsive image">
+
+        </div>
+        <div class="col-sm-4 col-md-4" id="vodkaCran" onclick="pourVodkaCranberry();">
+            <img src="media/vodka-cranberry.png" class="img-responsive cocktail-img" alt="Responsive image">
+        </div>
+        <div class="col-sm-4 col-md-4" id="teqSunrise" onclick="pourTequilaSunrise();">
+            <img src="media/sunrise.png" class="img-responsive cocktail-img"
+                 alt="Responsive image">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row shelf">
+        <div class="oneShelf col-sm-4 col-md-4">
+            <p>Jack and Coke</p>
+        </div>
+        <div class="oneShelf col-sm-4 col-md-4" id="twoShelf">
+            <p>Vodka Cranberry</p>
+        </div>
+        <div class="oneShelf col-sm-4 col-md-4" id="threeShelf">
+            <p align="right">Tequila Sunrise</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class=" col-sm-4 col-md-4 drink" id="bayBreeze" onclick="pourBayBreeze();">
+            <img src="media/baybreeze.png " class="img-responsive cocktail-img" alt="Responsive image ">
+        </div>
+
+        <div class="col-sm-4 col-md-4 drink" id="screwdriver" onclick="pourScrewdriver();">
+            <img src="media/screwdriver.png " class="img-responsive cocktail-img" alt="Responsive image ">
+        </div>
+
+        <div class="col-sm-4 col-md-4 drink" id="margarta" onclick="pourMargarita();">
+            <img src="media/margarita.png " class="img-responsive cocktail-img">
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row shelf">
+        <div class="oneShelf col-sm-4 col-md-4">
+            <p>Bay Breeze</p>
+        </div>
+        <div class="oneShelf col-sm-4 col-md-4" id="twoShelf">
+            <p>Screwdriver</p>
+        </div>
+        <div class="oneShelf col-sm-4 col-md-4" id="threeShelf">
+            <p>Margarita</p>
+        </div>
+    </div>
+    <div>
+
+
+        <div class="header1" style="padding-top: 30px">
+            <h1>À la carte</h1>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-sm-3 col-md-3 drink" id="pineappleJuice" onclick="pourShot('pineapple');">
+                    <img src="media/pinepple-juice.png" class="img-responsive cocktail-img">
+                </div>
+
+                <div class="col-sm-3 col-md-3 drink" id="orangeJuice" onclick="pourShot('orange');">
+                    <img src="media/orange-juice.png" class="img-responsive cocktail-img">
+                </div>
+
+                <div class="col-sm-3 col-md-3 drink" id="margariaMix" onclick="pourShot('margarita');">
+                    <img src="media/margarita-mix.png" class="img-responsive cocktail-img">
+                </div>
+
+                <div class="col-sm-3 col-md-3 drink" id="cranJuice" onclick="pourShot('cranberry');">
+                    <img src="media/cranberry-juice.png" class="img-responsive cocktail-img">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row shelf">
+                <div class="oneShelf col-sm-3 col-md-3">
+                    <p>Pineapple Juice</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="twoShelf">
+                    <p>Orange Juice</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                    <p>Margarita Mix</p>
+                </div>
+                <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                    <p>Cranberry Juice</p>
+                </div>
+            </div>
+            <div>
+
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class=" col-sm-3 col-md-3 drink" id="coke" onclick="pourShot('coke');">
+                            <img src="media/coke.png" class="img-responsive cocktail-img">
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 drink" id="vodka" onclick="pourShot('vodka');">
+                            <img src="media/vodka.png" class="img-responsive cocktail-img">
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 drink" id="tequila" onclick="pourShot('tequila');">
+                            <img src="media/tequila.png" class="img-responsive cocktail-img">
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 drink" id="whiskey" onclick="pourShot('whiskey');">
+                            <img src="media/whiskey.png" class="img-responsive cocktail-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row shelf">
+                        <div class="oneShelf col-sm-3 col-md-3">
+                            <p>Coke</p>
+                        </div>
+                        <div class="oneShelf col-sm-3 col-md-3" id="twoShelf">
+                            <p>Vodka</p>
+                        </div>
+                        <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                            <p>Tequila</p>
+                        </div>
+                        <div class="oneShelf col-sm-3 col-md-3" id="threeShelf">
+                            <p>Whiskey</p>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                </div>
+                                <div class="footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="goBackBtn">Go
+                                        Back
+                                    </button>
+                                    <button type="button" class="btn btn-default" id="makeBtn">Make</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

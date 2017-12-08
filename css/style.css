@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "cartabar";
+    src: url(../media/NeogreyRegular.otf);
+}
+
+.logo {
+    font-family: cartabar;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 25%;
+    margin: 30px;
+    font-size: 70px;
+    display: inline-flex;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-top: 8px !important;
+    text-align: center;
+}
+
+.header1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px;
+    font-size: 70px;
+}
+
+.close {
+    margin-left: 31%;
+    margin-top: 4%;
+}
+
+.close1 {
+    margin-bottom: 30px;
+    float: right;
+    margin-right: 100px;
+    font-size: 70px;
+    color: black;
+}
+
+.drink {
+
+}
+
+.ingredients {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+body {
+    background-image: url(../media/brickwall_@2X.png);
+}
+
+.shelf {
+    height: 55px;
+    border: solid;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 7px;
+    border-color: black;
+    background-color: #877059;
+    margin-bottom: 50px;
+}
+
+.oneShelf1 {
+    display: inline-flex;
+    color: white;
+    font-size: 26px;
+    font-weight: 6px;
+}
+
+.contributers2 {
+    margin-bottom: 60px;
+}
+
+.modal-content {
+    text-align: center;
+    height: 570px;
+    width: 800px;
+    background-color: #84f990 !important;
+    border-radius: 1rem !important;
+}
+
+.modal {
+    margin-right: 20%;
+}
+
+.cocktail-img {
+    min-height: 160px;
+    height: 160px;
+    margin: 0 auto;
+    display: block;
+}
+
+#jackCoke img {
+    min-height: 80px !important;
+    height: 80px !important;
+    margin-top: 80px;
+}
+
+img {
+    height: 300px;
+}
+
+#goBackBtn {
+    font-size: 30px;
+    margin-right: 100px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#makeBtn {
+    font-size: 30px;
+    margin-left: 100px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.modal-content2 {
+    text-align: center;
+    height: 570px;
+    width: 800px;
+    background-color: #f0c742 !important;
+    border-radius: 1rem !important;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}

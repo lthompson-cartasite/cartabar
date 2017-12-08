@@ -13,6 +13,7 @@ function pour(pin, ounces) {
 
     var oz = ounces * ozDuration;
 
+    console.log('pouring');
     gpio.open(pin, "output", function(err) {
     	gpio.write(pin, initialState, function() {
     		setTimeout(function() {
@@ -24,9 +25,9 @@ function pour(pin, ounces) {
     });
 }
 
-app.use('/scripts', express.static('js'));
-app.use('/css', express.static('css'));
-app.use('/media', express.static('media'));
+app.use('/scripts', express.static(path.join(__dirname, 'js')));
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/media', express.static(path.join(__dirname, 'media')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));

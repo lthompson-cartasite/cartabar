@@ -13,7 +13,7 @@ function pour(pin, ounces) {
 
     var oz = ounces * ozDuration;
 
-    console.log('pouring');
+    console.log('pouring from pin:', pin, "oz:", oz);
     gpio.open(pin, "output", function(err) {
     	gpio.write(pin, initialState, function() {
     		setTimeout(function() {
@@ -29,20 +29,33 @@ app.use('/scripts', express.static(path.join(__dirname, 'js')));
 app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use('/media', express.static(path.join(__dirname, 'media')));
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res)  {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/credits', (req, res) => {
+app.get('/credits', function(req, res) {
     res.sendFile(path.join(__dirname + '/credits.html'));
 });
 
-app.get('/:pin/:amount', (req, res) => {
-    let params = req.params,
-        pin = params.pin,
+app.get('/prefill/:amount', function(req, res) {
+    var params = req.params,
         amount = params.amount;
-    pour(pins[pin], amount);
-    res.send(`Pouring ${pin} of ${amount}`);
+
+    pins.forEach(function (value, index) {
+        console.log(value, index);
+        pour(pins[index], amount);
+    });
+
+    res.send("prefill: " + amount + " oz");
 });
 
-app.listen(port, () => console.log(`Port ${port}!`));
+app.get('/:pin/:amount', function(req, res) {
+    var params = req.params,
+        pin = params.pin,
+        amount = params.amount;
+
+    pour(pins[pin], amount);
+    res.send("Pouring", pin, "of", amount);
+});
+
+app.listen(port, function() {  console.log("Port", port)});

@@ -37,7 +37,7 @@ app.get('/credits', function(req, res) {
     res.sendFile(path.join(__dirname + '/credits.html'));
 });
 
-app.get('/prefill/:amount', function(req, res) {
+app.get('/flood/:amount', function(req, res) {
     var params = req.params,
         amount = params.amount;
 
@@ -46,7 +46,7 @@ app.get('/prefill/:amount', function(req, res) {
         pour(pins[index], amount);
     });
 
-    res.send("prefill: " + amount + " oz");
+    res.send("flooding tubes with: " + amount + " oz");
 });
 
 app.get('/:pin/:amount', function(req, res) {

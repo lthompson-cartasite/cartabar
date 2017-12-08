@@ -1,7 +1,9 @@
+`npm install`
+
 run with 
-`node script.js`
-???
-profit
+* `node script.js`
+* ???
+* profit
 
 look at `localhost:3000`.
 
